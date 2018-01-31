@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "NNDagnyTextWeb";
+  src: url("fonts/NNDagnyTextWeb.eot");
+  src: url("fonts/NNDagnyTextWeb.eot?#iefix") format("embedded-opentype"),
+    url("fonts/NNDagnyTextWeb.woff") format("woff");
+}
+@font-face {
+  font-family: "NNDagnyDisplayWebPro";
+  src: url("fonts/NNDagnyDisplayWebPro.eot");
+  src: url("fonts/NNDagnyDisplayWebPro.eot?#iefix") format("embedded-opentype"),
+    url("fonts/NNDagnyDisplayWebPro.woff") format("woff");
+}
+:root {
+  --black: #414141;
+  --grey-extra-light: #e5ded9;
+  --dark-orange: #e64415;
+  --medium-orange: #ea650d;
+  --light-orange: #ee7f00;
+  --heading-font: "NNDagnyDisplayWebPro";
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+html {
+  /* border-box box model allows us to add padding and border to our elements without increasing their size */
+  box-sizing: border-box;
+  /* A system font stack so things load nice and quick! */
+  font-family: "NNDagnyTextWeb";
+  font-size: 10px;
+  color: var(--black);
+}
+
+.light {
+  color: var(--light-orange);
+}
+.medium {
+  color: var(--medium-orange);
+}
+.dark {
+  color: var(--dark-orange);
+}
+
+a {
+  color: var(--medium-orange);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+  color: var(--medium-orange);
+}
+
+.subheadline {
+  font-family: var(--heading-font);
+  font-size: 20px;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+img.fit {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.screenshot {
+  border: 3px solid var(--black);
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.signature {
+  width: 200px;
+}
+
+section {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--grey-extra-light);
+}
+
+.plan-table {
+  display: grid;
+  grid-template-columns: 4fr repeat(6, 1fr);
+  justify-items: center;
+}
+
+.plan-table .row-header {
+  grid-column: 1;
+  justify-self: start;
+}
+
+.plan-table .active {
+  background-color: var(--medium-orange);
+  justify-self: stretch;
+}
+
+.plan-table .border-bottom {
+  grid-column: 1/-1;
+  justify-self: stretch;
+  border-bottom: 1px solid var(--grey-extra-light);
+}
+
+.plan-table .minus-4 {
+  grid-column: 2;
+}
+
+.plan-table .minus-3 {
+  grid-column: 3;
+}
+.plan-table .minus-2 {
+  grid-column: 4;
+}
+.plan-table .minus-1 {
+  grid-column: 5;
+}
+.plan-table .plus-1 {
+  grid-column: 6;
+}
+.plan-table .plus-4 {
+  grid-column: 7;
+}
+
+a.button {
+  display: inline-flex;
+  border: 1px solid var(--medium-orange);
+  border-radius: 4px;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: var(--heading-font);
+}
+
+a.button img {
+  margin-right: 10px;
+}
